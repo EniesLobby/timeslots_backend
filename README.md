@@ -1,8 +1,8 @@
 # Timeslots backend
-## Overview
+##Overview
 Simple restful backend for timeslots management between interviewers and candidates  
 
-## Installation
+##Installation
 git clone https://github.com/EniesLobby/timeslots_backend  
 cd timeslots_backend  
 python manage.py runserver  
@@ -12,7 +12,7 @@ https://github.com/ottoyiu/django-cors-headers - corsheaders should be also inst
 By default localhost:4200 is allowed  
 
 
-## API
+##API
 
 <b>Interviewer/candidate create and view a list</b>  
 [o] api/interviewers/ - GET, POST  
@@ -39,5 +39,5 @@ Returns list with start and end dates
 **smcheck param to check interviewers together or separately (The case when on interview present several interviewers at the same time)  
 ***Minimum duration of the interview is set to 30 min. Intervals less than 30 min is not considered. Can be changed in tscompute.py file.  
 
-## Front end
+##Front end
 https://github.com/EniesLobby/timeslots_frontend
