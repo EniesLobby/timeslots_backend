@@ -14,7 +14,7 @@ By default localhost:4200 is allowed
 
 ## API
 
-<b>Interviewer/candidate create and view a list</b>
+<b>Interviewer/candidate create and view a list</b>  
 [o] api/interviewers/ - GET, POST  
 [o] api/candidates/ - GET, POST  
   
