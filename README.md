@@ -36,4 +36,5 @@ By default localhost:4200 is allowed
 Returns list with start and end dates
 
 *Start date and End date required since it is the most general case (matches for next week regulated with front end)  
-**smcheck param to check interviewers together or separately (The case when on interview present several interviewers at the same time)  
+**smcheck param to check interviewers together or separately (The case when on interview present several interviewers at the same time)
+***Minimum duration of the interview is set to 30 min. Intervals less than 30 min is not considered. Can be changed in tscompute.py file.
