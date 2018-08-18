@@ -19,19 +19,19 @@ By default localhost:4200 is allowed
 [o] api/candidates/ - GET, POST  
   
 <b>Interviewer/candidate delete and update</b>  
-[o] api/interviewers/<pk> - DELETE, PUT  
-[o] api/candidates/<pk> - DELETE, PUT  
+[o] api/interviewers/\<pk\> - DELETE, PUT  
+[o] api/candidates/\<pk\> - DELETE, PUT  
   
 <b>Create Interviewer/Candidate timeslot and view a list</b>  
-[o] api/timeslots/candidates/<pk> - GET, POST  
-[o] api/timeslots/interviewers/<pk> - GET, POST    
+[o] api/timeslots/candidates/\<pk\> - GET, POST  
+[o] api/timeslots/interviewers/\<pk\> - GET, POST    
 
 <b>Interviewer/Candidate timeslot delete and update</b>  
-[o] api/timeslots/<pk>/candidates/ - DELETE, PUT  
-[o] api/timeslots/<pk>/interviewers/ - DELETE, PUT  
+[o] api/timeslots/\<pk\>/candidates/ - DELETE, PUT  
+[o] api/timeslots/\<pk\>/interviewers/ - DELETE, PUT  
   
 <b>Get matches between given interviewers and candidate for a specific date range</b>  
-[o] api/timeslots/candidates/{candidate_pk}/interviewers/?ids={interviewer_pk}&start_date={YYY-mm-dd}&end_date={YYY-mm-dd}&smcheck=0  
+[o] api/timeslots/candidates/{candidate_pk}/interviewers/?ids={interviewers_pk comma separated}&start_date={YYY-mm-dd}&end_date={YYY-mm-dd}&smcheck=0 
 
 *Start date and End date required since it is the most general case (matches for next week regulated with front end)  
 **smcheck param to check interviewers together or separately (The case when on interview present several interviewers at the same time)  
