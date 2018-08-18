@@ -31,7 +31,7 @@ By default localhost:4200 is allowed
 [o] api/timeslots/<pk>/interviewers/ - DELETE, PUT  
   
 <b>Get matches between given interviewers and candidate for a specific date range</b>  
-[o] /api/timeslots/candidates/{candidate_pk}/interviewers/?ids={interviewer_pk}&start_date=2018-08-20&end_date=2018-08-24&smcheck=0  
+[o] api/timeslots/candidates/{candidate_pk}/interviewers/?ids={interviewer_pk}&start_date={YYY-mm-dd}&end_date={YYY-mm-dd}&smcheck=0  
 
 *Start date and End date required since it is the most general case (matches for next week regulated with front end)  
 **smcheck param to check interviewers together or separately (The case when on interview present several interviewers at the same time)  
