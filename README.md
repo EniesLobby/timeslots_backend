@@ -33,5 +33,7 @@ By default localhost:4200 is allowed
 <b>Get matches between given interviewers and candidate for a specific date range</b>  
 [o] api/timeslots/candidates/{candidate_pk}/interviewers/?ids={interviewers_pk comma separated}&start_date={YYY-mm-dd}&end_date={YYY-mm-dd}&smcheck=0 
 
+Returns list with start and end dates
+
 *Start date and End date required since it is the most general case (matches for next week regulated with front end)  
 **smcheck param to check interviewers together or separately (The case when on interview present several interviewers at the same time)  
