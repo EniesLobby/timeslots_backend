@@ -14,23 +14,23 @@ By default localhost:4200 is allowed
 
 ## API
 
-###Interviewer/candidate create and view a list  
+<b>Interviewer/candidate create and view a list</b>
 [o] api/interviewers/ - GET, POST  
 [o] api/candidates/ - GET, POST  
   
-###Interviewer/candidate delete and update  
+<b>Interviewer/candidate delete and update</b>  
 [o] api/interviewers/<pk> - DELETE, PUT  
 [o] api/candidates/<pk> - DELETE, PUT  
   
-###Create Interviewer/Candidate timeslot and view a list  
+<b>Create Interviewer/Candidate timeslot and view a list</b>  
 [o] api/timeslots/candidates/<pk> - GET, POST  
 [o] api/timeslots/interviewers/<pk> - GET, POST    
 
-###Interviewer/Candidate timeslot delete and update  
+<b>Interviewer/Candidate timeslot delete and update</b>  
 [o] api/timeslots/<pk>/candidates/ - DELETE, PUT  
 [o] api/timeslots/<pk>/interviewers/ - DELETE, PUT  
   
-###Get matches between given interviewers and candidate for a specific date range  
+<b>Get matches between given interviewers and candidate for a specific date range</b>  
 [o] /api/timeslots/candidates/{candidate_pk}/interviewers/?ids={interviewer_pk}&start_date=2018-08-20&end_date=2018-08-24&smcheck=0  
 
 *Start date and End date required since it is the most general case (matches for next week regulated with front end)  
