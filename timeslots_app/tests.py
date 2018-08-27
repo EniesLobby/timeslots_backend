@@ -15,25 +15,25 @@ class BaseViewTest(APITestCase):
     @staticmethod
     def create_interviewer(first_name = "", last_name= "", email = ""):
         
-        if first_name != "" and last_name != "" and email != "":
+        if first_name and last_name and email:
             Interviewer.objects.create(first_name = first_name, last_name = last_name, email = email)
     
     @staticmethod
     def create_candidate(first_name = "", last_name= "", email = ""):
 
-        if first_name != "" and last_name != "" and email != "":
+        if first_name and last_name and email:
             Candidate.objects.create(first_name = first_name, last_name = last_name, email = email)
     
     @staticmethod
     def create_interviewer_timeslot(interviewer = "", start_date= "", end_date = ""):
         
-        if interviewer != "" and start_date != "" and end_date != "":
+        if interviewer and start_date and end_date:
             TimeSlot_Interviewer.objects.create(interviewer = interviewer, start_date = start_date, end_date = end_date)
     
     @staticmethod
     def create_candidate_timeslot(candidate = "", start_date= "", end_date = ""):
         
-        if candidate != "" and start_date != "" and end_date != "":
+        if candidate and start_date and end_date:
             TimeSlot_Candidate.objects.create(candidate = candidate, start_date = start_date, end_date = end_date)
 
 
