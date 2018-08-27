@@ -30,13 +30,13 @@ Our app is too simple and made by one author.
 Intergration testing more about moduled systems with different understandings and programmic logics.
 
 More deep tests include:  
-Different time formats, timezones (YYY-dd-mm)
-Repeated timedates
-Security testing like XSS, SQL injections
-Name started with number
-Email without @
-Past dates
-Start date and End date have different dates
+Different time formats, timezones (YYY-dd-mm)  
+Repeated timedates  
+Security testing like XSS, SQL injections  
+Name started with number  
+Email without @  
+Past dates  
+Start date and End date have different dates  
 
 ## Code answers
 This should not be a case. Perhaps for testing purposes.
